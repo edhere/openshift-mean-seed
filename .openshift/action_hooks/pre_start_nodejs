@@ -1,0 +1,7 @@
+#!/bin/bash
+export NODE_ENV=production
+
+# If there is a bower file, run $ bower install
+if [ -f "${OPENSHIFT_REPO_DIR}"/bower.json ]; then
+ (export HOME=/var/lib/openshift/54238ea650044653830007ee/app-root/runtime/repo; cd "${OPENSHIFT_REPO_DIR}"; ./node_modules/bower/bin/bower install)
+fi

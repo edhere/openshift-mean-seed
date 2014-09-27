@@ -4,7 +4,7 @@ Quick and easy seed for an OpenShift app
 
 ### create new app
 ```
-rhc app create nodews nodejs-0.10 mongodb-2.4 --from-code=https://github.com/openshift-quickstart/openshift-mongo-node-express-example.git
+rhc app create nodews nodejs-0.10 mongodb-2.4 --from-code=https://github.com/advectus/openshift-mean-seed.git
 ```
 
 ### troubleshooting
